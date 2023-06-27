@@ -1,0 +1,28 @@
+{
+  "name": "twitter-clone",
+  "version": "1.0.0",
+  "description": "A full stack twitter clone with a REST API and React client.",
+  "scripts": {
+    "install": "(cd server && npm install) & (cd ../client && npm install)",
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "server": "cd server && npm start",
+    "server-dev": "cd server && npm run dev",
+    "client": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anooshd7/Twitter-Clone.git"
+  },
+  "author": "A",
+  "license": "MIT",
+  "homepage": "https://github.com/anooshd7/Twitter-Clone.git",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.4",
+    "concurrently": "^5.2.0",
+    "dompurify": "^3.0.3"
+  }
+}
